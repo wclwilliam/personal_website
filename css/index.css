@@ -1,0 +1,312 @@
+/* ===========================header setting 特殊設定=========================== */
+
+body.index header .function_list>i { /* index專屬淺色 */
+    color: #dadada;
+}
+
+body.index header nav { /* index專屬淺色 */
+    color: #dadada;
+    
+}
+
+/* ===========================首頁 hero setting=========================== */
+
+.hero {
+    margin-top: -100px;
+    height: 1080px;
+    position: relative;
+    z-index: 0;
+}
+
+.hero .bglinear {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    z-index: 1;
+}
+
+.hero .bg img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.hero::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    z-index: 0;
+    opacity: 1;
+}
+
+.hero_title {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    color: #FFD700;
+    font-family: "Candal", sans-serif;
+    font-size: 96px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+}
+
+.hero_title::before {
+    content: "";
+    width: 65%;
+    min-width: 1000px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+    background-color: #181818;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.calendar_button {
+    font-size: 32px;
+    font-weight: 600;
+    background-color: #55431EB3;
+    box-sizing: border-box;
+    color: #fff;
+    border: #CCA455 solid 3px;
+    border-radius: 15px;
+    padding: 15px 45px;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* ===========================首頁 hero setting=========================== */
+
+
+
+/* ===========================首頁 capaign setting=========================== */
+
+
+.campaign_to_news{
+    background-image: url(/0_index/campaign_ribbon.png), url(/0_index/news_linear.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top, center bottom;
+
+}
+
+.campaign {
+    padding-top: 120px;
+    position: relative;
+}
+
+.campaign .card {
+    background-color: #CCA455D9;
+    width: 100%;
+    display: flex;
+}
+
+.campaign .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6.944444% 6.944444% 5% 6.944444%;
+}
+
+.campaign .text>h2.lg_40px {
+    padding: 0 0 20px 0;
+}
+
+.campaign .text>p.lg_20px {
+    padding: 12px 0 20px 0;
+}
+
+.campaign .text>span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid #181818;
+    width: fit-content;
+    margin: 12px 0;
+}
+
+
+.program_button {
+    font-size: 24px;
+    font-weight: 600;
+    box-sizing: border-box;
+    color: #181818;
+    border: #181818B3 solid 2px;
+    border-radius: 15px;
+    padding: 15px 45px;
+    width: fit-content;
+}
+
+.campaign_photo {
+    padding: 38px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campaign_photo>img{
+    width: 100%;
+    display: block;
+
+}
+
+/* ===========================首頁 capaign setting=========================== */
+
+/* ===========================首頁 news setting=========================== */
+
+.news {
+    margin: 150px auto 0 auto;
+    padding-bottom: 120px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5625%;
+    max-width: 75%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.news_card {
+    flex-basis: 32.291667%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* min-width: 280px */
+}
+
+.news_photo img {
+    border-radius: 15px 15px 0 0;
+    display: block;
+    width: 100%;
+}
+
+.news_content {
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    box-sizing: content-box;
+    border-left: 1px solid #CCA455;
+    border-right: 1px solid #CCA455;
+    border-bottom: 1px solid #CCA455;
+    padding: 40px 30px 50px 30px;
+}
+
+.news_card:nth-child(1) {
+    margin-top: -50px;
+}
+
+.news_card:nth-child(3) {
+    margin-top: 50px;
+}
+
+/* ===========================首頁 news setting=========================== */
+
+/* ===========================首頁 webshop setting=========================== */
+.webshop {
+    background-color: #F7F0E4;
+    background-image: url(/0_index/black-thread-light.png);
+}
+
+.webshop .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.webshop .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.webshop h2{
+    padding-bottom: 30px;
+}
+
+.webshop .btn{
+    box-sizing: border-box;
+    border: 2px solid #181818;
+    border-radius: 10px;
+    padding: 14px 80px;
+    color: #181818;
+    margin-top: 25px;
+    width: fit-content;
+}
+
+.webshop .cardlist{
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.webshop .cardtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px 20px;
+    width: 305px;
+    background-color: #001F3F;
+    border-radius: 0 0 15px 15px;
+}
+
+.webshop .icon{
+    align-self: flex-end;
+    padding-top: 10px;
+}
+
+.webshop .icon i{
+    font-size: 32px;
+    color: #fff;
+}
+
+.cardtext h3, .cardtext p{
+    color: #fff;
+    padding-top: 10px;
+}
+
+.product_cat{
+    color: #FFD700;
+    /* padding bottom: 10px; */
+}
+
+
+/* ===========================首頁 webshop setting=========================== */
+
+
+
+
+
+
