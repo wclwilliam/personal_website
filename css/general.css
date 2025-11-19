@@ -5,7 +5,7 @@ body {
 
 body.general {
     /* 非特殊頁面適用背景 */
-    background-image: url(image/share_item/bg_groovepaper.png);
+    background-image: url(/image/share_item/bg_groovepaper.png);
     background-color: #F3EDE9;
 }
 
@@ -286,7 +286,7 @@ body.general .banner_title {
 
 
 .newsletter {
-    background-image: url(image/share_item/newsletter_bg.jpg);
+    background-image: url(/image/share_item/newsletter_bg.jpg);
     background-repeat: no-repeat;
     height: 440px;
     background-position: center top;
