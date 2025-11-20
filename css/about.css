@@ -87,7 +87,16 @@ body.about .banner_title {
     width: 710px;
     height: 470px;
     border: 1px solid #CCA455;
+}
 
+.story .pic::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    width: 710px;
+    height: 470px;
+    border: 1px solid #CCA455;
 }
 
 .history h2 {

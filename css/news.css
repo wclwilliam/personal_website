@@ -1,10 +1,13 @@
 /* ===========================index / news list page setting=========================== */
 
-
+.content a{
+    text-decoration: none;
+}
 .card_news_list{
-    background-color: #E4DEDA;
-    margin: 40px 0;
-    padding: 40px 0;
+    /* background-color: #E4DEDA; */
+
+    padding: 50px 0;
+    border-bottom: 1px solid #CCA455;
 }
 
 .card_text{
@@ -52,13 +55,16 @@
 
 }
 
-.card_icon:hover i{
-    color: #E4DEDA;
+.cardwrap_news_list a :hover .card_icon i{
+    color: #F3EDE9;
+    transform: translateX(30px);
 
 }
 
-.card_icon:hover::before{
+.cardwrap_news_list a :hover .card_icon::before{
     background-color: #CCA455;
+    transform: translate(calc(-50% + 30px), -50%);
+    
 }
 
 /* ===========================index / news list page setting=========================== */
