@@ -87,7 +87,8 @@
     color:#CCA455;
     border: none;
     margin: 7px;
-    cursor: pointer;    
+    cursor: pointer;   
+    background-color: transparent; 
 }
 
 
