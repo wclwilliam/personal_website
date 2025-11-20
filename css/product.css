@@ -68,7 +68,7 @@
 
 }
 
-.filter_area .filter_btn {
+/* .filter_area .filter_btn {
     font-family: "Fira Sans", sans-serif;
     background-color: transparent;
     color: #CCA455;
@@ -111,9 +111,7 @@
 }
 
 .searchbar:focus {
-    /* border: 2px solid #FFD700;; */
     outline: 1px solid #CCA455;
-    /* box-shadow: -4px 4px 10px 0 #00000033;; */
 }
 
 .search_submit_btn {
@@ -137,7 +135,7 @@
     color: #fff;
     background-color: #CCA455;
     transition: .3s;
-}
+} */
 
 .product_cardlist .card{
     margin: 20px 0;
