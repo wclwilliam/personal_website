@@ -22,7 +22,7 @@ body.index header nav {
 
 .hero .bglinear {
     width: 100%;
-    height: 100%;
+    height: 1080px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,6 +30,16 @@ body.index header nav {
     top: 0;
     left: 0;
     z-index: 2;
+}
+
+.hero .bglinear img.top {
+    width: 100%;
+    height: 180px;
+}
+
+.hero .bglinear img.bottom {
+    width: 100%;
+    height: 330px;
 }
 
 .hero .bg {
@@ -44,22 +54,17 @@ body.index header nav {
 
 .hero .bg img {
     display: block;
-
     width: 100%;
     height: 100%;
     display: block;
-
-    /* 2. 核心：圖片填充容器並保持比例，超出部分裁切 */
     object-fit: cover;
-
-    /* 3. 核心：將圖片置中，裁切發生在左右兩邊 */
     object-position: center;
 }
 
 .hero::before {
     content: "";
     width: 100%;
-    height: 100%;
+    height: 1080px;
     position: absolute;
     background-color: #000;
     z-index: 0;
@@ -103,7 +108,7 @@ h1 {
     font-weight: 600;
     background-color: #55431EB3;
     box-sizing: border-box;
-    color: #fff;
+    color: #dadada;
     border: #CCA455 solid 3px;
     border-radius: 15px;
     padding: 15px 45px;
@@ -123,9 +128,10 @@ h1 {
 
 
 .campaign_to_news {
-    background-image: url(/0_index/campaign_ribbon.png), url(/0_index/news_linear.png);
+    background-image: url(../image/0_index/campaign_ribbon.png), url(../image/0_index/news_linear.png);
     background-repeat: no-repeat, no-repeat;
     background-position: center top, center bottom;
+    background-size: 100% 70%, 100% 60%;
 
 }
 
@@ -224,7 +230,7 @@ h1 {
 }
 
 .news_content {
-    background-color: #fff;
+    background-color: #F9F7F5;
     border-radius: 0 0 15px 15px;
     box-sizing: content-box;
     border-left: 1px solid #CCA455;
@@ -281,6 +287,19 @@ h1 {
     gap: 20px;
 }
 
+.webshop .card {
+    box-shadow: -4px 4px 10px 0 #00000033;
+    background-color: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+.webshop .cardpic img {
+    display: block;
+}
+
 .webshop .cardtext {
     display: flex;
     flex-direction: column;
@@ -288,7 +307,6 @@ h1 {
     padding: 30px 20px 20px;
     width: 305px;
     background-color: #001F3F;
-    border-radius: 0 0 15px 15px;
 }
 
 .webshop .icon {

@@ -23,6 +23,7 @@ h2.xl_52px {
     letter-spacing: 0.05em;
 }
 
+span.xxlg_40px,
 h2.lg_40px {
     font-size: 40px;
     font-weight: 700;
@@ -45,6 +46,7 @@ h3.md_20px {
     letter-spacing: 0.05em;
 }
 
+span.lg_20px,
 p.lg_20px {
     font-size: 20px;
     font-weight: 400;
@@ -52,6 +54,7 @@ p.lg_20px {
     letter-spacing: 0.05em;
 }
 
+span.md_16px,
 p.md_16px {
     font-size: 16px;
     font-weight: 400;
@@ -74,8 +77,6 @@ nav.nav_18px {
     letter-spacing: 0.05em;
 }
 
-
-
 .btn.lg_24px {
     font-size: 24px;
     font-weight: 600;
@@ -90,11 +91,26 @@ span.card_date {
     letter-spacing: 0.2em;
 }
 
+
 span.product_cat {
     font-size: 14px;
     font-weight: 400;
     line-height: 0.7;
     letter-spacing: 0.2em;
+}
+
+span.product_cat_lg {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0.7;
+    letter-spacing: 0.2em;
+}
+
+data.price{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.05em;
 }
 
 
@@ -127,6 +143,7 @@ h3.card_title {
     border-radius: 50%;
     text-decoration: none;
     font-size: 20px;
+
 }
 
 .pagination a.link {
@@ -136,8 +153,20 @@ h3.card_title {
 .pagination a.link_active {
     background-color: #181818;
     font-size: 20px;
-    color: #fff;
+    color: #dadada;
 }
+
+.pagination a.link:hover,
+.pagination a.link_active:hover {
+    scale: 1.1;
+
+}
+
+
+/* 換頁按鈕通用設定 */
+
+
+/* 返回箭頭通用設定 */
 
 
 .back_arrow {
@@ -153,7 +182,7 @@ h3.card_title {
 .back_arrow::before {
     content: "";
     display: block;
-    position: absolute; 
+    position: absolute;
     left: 10%;
     top: 110%;
     width: 200px;
@@ -165,10 +194,10 @@ h3.card_title {
 .back_arrow::after {
     content: "";
     display: block;
-    position: absolute; 
+    position: absolute;
     left: calc(10% + 4px);
     top: 110%;
-    transform: translateY(-50%) rotate(45deg); 
+    transform: translateY(-50%) rotate(45deg);
     width: 20px;
     height: 20px;
     border-left: 1px solid #181818;
@@ -189,8 +218,69 @@ h3.card_title {
     padding-left: 80px;
 }
 
+/* 返回箭頭通用設定 */
 
 
+/* 商品卡片通用設定 */
+.product_cardlist .cardinner{
+    border: 1px solid #CCA455;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product_cardlist .cardinner:hover{
+    box-shadow: -4px 4px 10px 0 #00000033;
+}
+
+.product_cardlist .cardpic{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product_cardlist .cardpic img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.product_cardlist .cardtext{
+    background-color: #F9F7F5;
+    padding: 20px;
+}
+
+.product_cardlist .cardtext h3{
+    margin-top: 10px;
+}
+
+.product_cardlist .product_description.hovershow{
+    position: absolute;
+    background-color: #181818BF;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s;
+}
+.product_cardlist .product_description.hovershow p{    
+    padding: 0 20px;
+}
+
+.product_cardlist .cardinner:hover .product_description.hovershow{
+    opacity: 1;
+    transition: .3s;
+}
+
+.product_cardlist a{
+    text-decoration: none;
+}
+/* 商品卡片通用設定 */
 
 
 /* ===========================header setting 全頁面適用=========================== */
@@ -330,7 +420,7 @@ body.general .banner_title {
 
 }
 
-.newsletter .input_email input::placeholder {
+input::placeholder {
     color: #181818B2;
     font-size: 16px;
     font-weight: 400;
@@ -339,7 +429,7 @@ body.general .banner_title {
 
 }
 
-.newsletter .input_email input:focus {
+input:focus {
     outline: 2px solid #CCA455;
 }
 
